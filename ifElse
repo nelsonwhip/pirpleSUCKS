@@ -1,0 +1,33 @@
+"""3 Parameters comparison
+    
+
+    """
+
+Equal = False
+
+inputA = '12'
+inputA = int(inputA)
+
+print ('Our first number is: ', inputA)
+
+print ("Please enter a number.")
+inputB = input()
+inputB = int(inputB)
+
+print ("Please enter another number.")
+
+inputC = input()
+inputC = int(inputC)       
+
+
+
+if inputA == inputB:
+    Equal = True
+
+elif inputA == inputC:
+    Equal = True
+
+elif inputB == inputC:
+    Equal = True
+
+print (Equal)
