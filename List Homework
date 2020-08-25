@@ -1,0 +1,45 @@
+"""List Homwwork for Pirple Python is Easy
+    Nelson W  """
+
+myUniqueList = []
+myLeftovers = []
+dupeTest = False
+
+
+def listMaker(itemOne, itemTwo, itemThree):
+    myUniqueList = []  #clear list for multiple testing
+    myUniqueList.append(itemOne) #assign item one (no test needed)
+    
+   
+    if itemTwo == myUniqueList[0]: #test item 2
+        dupeTest = False
+        myLeftovers.append(itemTwo)
+        myUniqueList.append(dupeTest) #?
+        print(dupeTest, "Debug itemTwo")
+           
+    else:
+        dupeTest = True
+        myUniqueList.append(itemTwo)
+        
+    
+    if itemThree == myUniqueList[0]: #test item 3 
+        dupeTest = False
+        myLeftovers.append(itemThree)
+        print(dupeTest, "Debug itemThree")
+    
+    elif itemThree == myUniqueList[1]:
+        dupeTest = False
+        myLeftovers.append(itemThree)
+        #print(dupeTest)
+    else:
+        dupeTest = True
+        myUniqueList.append(itemThree)
+        print("Updated list is now ", myUniqueList)
+
+
+listMaker(1,2,3) #calling function and testing it
+listMaker('crud',9,'kitty')    
+listMaker(1,1,2)
+listMaker(1,42,42)
+listMaker(9,6,9)
+print("myLeftovers: ",myLeftovers)
