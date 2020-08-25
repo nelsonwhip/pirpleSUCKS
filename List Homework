@@ -22,7 +22,7 @@ def listMaker(itemOne, itemTwo, itemThree):
         myUniqueList.append(itemTwo)
         
     
-    if itemThree == myUniqueList[0]: #test item 3 
+    if itemThree == myUniqueList[0]: #test for item 3 
         dupeTest = False
         myLeftovers.append(itemThree)
         print(dupeTest, "Debug itemThree")
